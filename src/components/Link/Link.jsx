@@ -1,6 +1,7 @@
 import useInteractionStyles from '../../hooks/useInteractionStyles';
+import Container from '../Container/Container';
 
-function Button({element}) {
+function Link({element}) {
   const {
     computedStyles,
     actions
@@ -11,12 +12,19 @@ function Button({element}) {
   })
 
   return (
-    <button
+    <a
       {...actions}
       {...element.props}
       style={computedStyles}
-    >{element.props.value}</button>
+    >
+      {element.text && element.text}
+      {element.elements.length && element.elements.map((child, index) => {
+        if(child.type === "Container"){
+          return <Container key={index} element={child} />
+        }
+      })}
+    </a>
   );
 }
 
-export default Button;
+export default Link;

@@ -83,75 +83,115 @@ export const siteData = [
             },
             elements: [
               {
-                type: "Container",
+                type: "Link",
                 props: {
+                  text: "",
+                  href: "/",
                   style: {
-                    padding: "20px",
-                    marginBottom: "10px",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "space-between",
-                    boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px"
-                  }
+                    color: "black",
+                    display: "block",
+                    textDecoration: "none",
+                    borderRadius: "8px",
+                    boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
+                  },
+                },
+                hoverStyle: {
+                  boxShadow: "rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset"
                 },
                 elements: [
                   {
-                    type: "Text",
-                    value: "My Order was incomplete",
+                    type: "Container",
                     props: {
                       style: {
-                        fontSize: "1.2rem"
+                        padding: "20px",
+                        marginBottom: "10px",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "space-between",
+                        
                       }
-                    }
-                  },
-                  {
-                    type: "Image",
-                    props: {
-                        src: "img/chevron-right.svg",
-                        alt: "Right Chevron",
-                        style: {
-                          width: "32px",
-                          height: "32px",
+                    },
+                    elements: [
+                      {
+                        type: "Text",
+                        value: "My Order was incomplete",
+                        props: {
+                          style: {
+                            fontSize: "1.2rem"
+                          }
                         }
-                    }
-                  }
+                      },
+                      {
+                        type: "Image",
+                        props: {
+                            src: "img/chevron-right.svg",
+                            alt: "Right Chevron",
+                            style: {
+                              width: "32px",
+                              height: "32px",
+                            }
+                        }
+                      }
+                    ]
+                  },
                 ]
               },
+              
               {
-                type: "Container",
+                type: "Link",
                 props: {
+                  text: "",
+                  href: "/",
                   style: {
-                    padding: "20px",
-                    marginBottom: "40px",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "space-between",
-                    boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px"
-                  }
+                    color: "black",
+                    display: "block",
+                    textDecoration: "none",
+                    borderRadius: "8px",
+                    boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
+                  },
+                },
+                hoverStyle: {
+                  boxShadow: "rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset"
                 },
                 elements: [
                   {
-                    type: "Text",
-                    value: "My Order was late",
+                    type: "Container",
                     props: {
                       style: {
-                        fontSize: "1.2rem"
+                        padding: "20px",
+                        marginBottom: "40px",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "space-between",
                       }
-                    }
-                  },
-                  {
-                    type: "Image",
-                    props: {
-                        src: "img/chevron-right.svg",
-                        alt: "Right Chevron",
-                        style: {
-                          width: "32px",
-                          height: "32px",
+                    },
+                    elements: [
+                      {
+                        type: "Text",
+                        value: "My Order was late",
+                        props: {
+                          style: {
+                            fontSize: "1.2rem"
+                          }
                         }
-                    }
-                  }
+                      },
+                      {
+                        type: "Image",
+                        props: {
+                            src: "img/chevron-right.svg",
+                            alt: "Right Chevron",
+                            style: {
+                              width: "32px",
+                              height: "32px",
+                            }
+                        }
+                      }
+                    ]
+                  },
                 ]
               },
+              
+
               {
                 type: "Text",
                 value: "Suggested amount to credit to the customer:",

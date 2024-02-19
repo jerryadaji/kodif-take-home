@@ -3,6 +3,7 @@ import Button from '../Button/Button';
 import Form from '../Form/Form';
 import Image from '../Image/Image';
 import Input from '../Input/Input';
+import Link from '../Link/Link';
 import Select from '../Select/Select';
 import Text from '../Text/Text';
 import TextArea from '../TextArea/TextArea';
@@ -37,6 +38,9 @@ function Container({element}) {
         }
         if(child.type === "Select"){
           return <Select key={index} element={child} />
+        }
+        if(child.type === "Link"){
+          return <Link key={index} element={child} />
         }
       })}
     </div>
