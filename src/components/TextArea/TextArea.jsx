@@ -1,7 +1,20 @@
-import { useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
+import PageContext from '../../PageContext/PageContext';
 
 function TextArea({element}) {
   const [value, setValue] = useState(element.props.value)
+
+  const {
+    validateFormById
+  } = useContext(PageContext)
+
+  useEffect(() => {
+    if(!!value){
+      validateFormById(element.formId, true)
+    } else {
+      validateFormById(element.formId, false)
+    }
+  }, [value])
 
   return (
    <div>
@@ -14,8 +27,6 @@ function TextArea({element}) {
         value={value}
       />
    </div>
-
-   
   );
 }
 

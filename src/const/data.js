@@ -214,6 +214,7 @@ export const siteData = [
                     name: "amount",
                     value: 0,
                     style: {
+                      boxSizing: "border-box",
                       width: "100%",
                       padding: "10px",
                       marginBottom: "10px",
@@ -300,6 +301,7 @@ export const siteData = [
                 type: "TextArea",
                 label: "Comments",
                 name: "comments",
+                formId: 1,
                 props: {
                   placeholder: "",
                   name: "comments",
@@ -314,20 +316,21 @@ export const siteData = [
                     fontSize: "1rem",
                     width: "100%",
                     borderRadius: "4px",
+                    boxSizing: "border-box"
                   }
                 }
               },
               {
                 type: "Button",
+                formId: 1,
                 props: {
                   value: "Submit",
                   type: "submit",
                   name: "Submit",
-                  // Dynamic behavior configuration:
-                  //disabledUntilNotEmpty: "userNameInput", // Refers to the ID of the text field
+                  disabled: true,
                   style: {
                     color: "white",
-                    backgroundColor: "#c5c5c5",
+                    backgroundColor: "#d25247",
                     display: "block",
                     padding: "24px",
                     marginBottom: "40px",
@@ -345,6 +348,20 @@ export const siteData = [
                 },
                 focusStyle: {
                   backgroundColor: "grey",
+                },
+                disabledStyle: {
+                  color: "white",
+                  backgroundColor: "#c5c5c5",
+                  display: "block",
+                  padding: "24px",
+                  marginBottom: "40px",
+                  border: "0",
+                  outline: "none",
+                  fontSize: "1.1rem",
+                  fontWeight: 600,
+                  width: "100%",
+                  borderRadius: "50px",
+                  cursor: "disabled"
                 }
               }
             ]
