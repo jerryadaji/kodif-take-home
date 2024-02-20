@@ -1,6 +1,7 @@
 # Kodif Take-home Assessment Solution
 
-This project is a solution to the Kodif take-home assessment linked [here](https://github.com/kodif-team/json-ui-project).
+This project is a solution to the Kodif take-home assessment linked [here](https://github.com/kodif-team/json-ui-project).\
+Find the data structure for the components in src/const/data.js
 
 
 ### `npm start`
